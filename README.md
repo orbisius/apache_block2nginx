@@ -7,9 +7,12 @@ Usage
 ------
 
 Download block rules from http://www.wizcrafts.net/chinese-blocklist.html and save them in a text file called *block_ips.txt*
+
 Start a common prompt and type
+
 `php apache_block2nginx.php > nginx_block_ips.txt`
-* copy the contents of nginx_block_ips.txt and create/append them to /etc/nginx/conf.d/block_ips.conf
+
+Copy the contents of nginx_block_ips.txt and create/append them to /etc/nginx/conf.d/block_ips.conf
 
 Test config: nginx -t
 
